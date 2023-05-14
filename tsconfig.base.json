@@ -14,7 +14,24 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@leetcode-30-days-js/compose": ["packages/compose/src/index.ts"],
+      "@leetcode-30-days-js/create-counter": [
+        "packages/create-counter/src/index.ts"
+      ],
+      "@leetcode-30-days-js/create-counter2": [
+        "packages/create-counter2/src/index.ts"
+      ],
+      "@leetcode-30-days-js/create-hello-world": [
+        "packages/create-hello-world/src/index.ts"
+      ],
+      "@leetcode-30-days-js/curry": ["packages/curry/src/index.ts"],
+      "@leetcode-30-days-js/filter": ["packages/filter/src/index.ts"],
+      "@leetcode-30-days-js/map": ["packages/map/src/index.ts"],
+      "@leetcode-30-days-js/memoize": ["packages/memoize/src/index.ts"],
+      "@leetcode-30-days-js/once": ["packages/once/src/index.ts"],
+      "@leetcode-30-days-js/reduce": ["packages/reduce/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
