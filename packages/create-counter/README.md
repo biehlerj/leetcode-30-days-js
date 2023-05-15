@@ -1,11 +1,38 @@
-# create-counter
+# Create Counter
 
-This library was generated with [Nx](https://nx.dev).
+Given an integer `n`, return a `counter` function. This `counter` function initially returns `n` and then returns 1 more than the previous value every subsequent time it is called (`n, n + 1, n + 2`, etc).
 
-## Building
+## Example 1
 
-Run `nx build create-counter` to build the library.
+Input:
 
-## Running unit tests
+`n = 10`
 
-Run `nx test create-counter` to execute the unit tests via [Jest](https://jestjs.io).
+`["call","call","call"]`
+
+Output: `[10,11,12]`
+
+Explanation:
+
+`counter() = 10 // The first time counter() is called, it returns n.`
+
+`counter() = 11 // Returns 1 more than the previous time.`
+
+`counter() = 12 // Returns 1 more than the previous time.`
+
+## Example 2
+
+Input:
+
+`n = -2`
+
+`["call","call","call","call","call"]`
+
+Output: `[-2,-1,0,1,2]`
+
+Explanation: `counter() initially returns -2. Then increases after each sebsequent call.`
+
+## Constraints
+
+- `-1000 <= n <= 1000`
+- `At most 1000 calls to counter() will be made`

@@ -1,11 +1,35 @@
-# create-hello-world
+# Create Hello World
 
-This library was generated with [Nx](https://nx.dev).
+Write a function `createHelloWorld`. It should return a new function that always returns `"Hello World"`.
 
-## Building
+## Example 1
 
-Run `nx build create-hello-world` to build the library.
+Input: `args = []`
 
-## Running unit tests
+Output: `"Hello World"`
 
-Run `nx test create-hello-world` to execute the unit tests via [Jest](https://jestjs.io).
+Explanation:
+
+`const f = createHelloWorld();`
+
+`f(); // "Hello World"`
+
+`The function returned by createHelloWorld should always return "Hello World".`
+
+## Example 2
+
+Input: `args = [{},null,42]`
+
+Output: `"Hello World"`
+
+Explanation:
+
+`const f = createHelloWorld();`
+
+`f({}, null, 42); // "Hello World"`
+
+`Any arguments could be passed to the function but it should still always return "Hello World".`
+
+## Constraints
+
+- `0 <= args.length <= 10`
