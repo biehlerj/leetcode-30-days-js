@@ -14,3 +14,4 @@ Code done while participating in [30 Days of LC JavaScript Challenge](https://le
 - [Day 8](./packages/once/README.md)
 - [Day 9](./packages/memoize/README.md)
 - [Day 10](./packages/curry/README.md)
+- [Day 11](./packages/sleep/README.md)
