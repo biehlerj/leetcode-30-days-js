@@ -31,7 +31,8 @@
       "@leetcode-30-days-js/memoize": ["packages/memoize/src/index.ts"],
       "@leetcode-30-days-js/once": ["packages/once/src/index.ts"],
       "@leetcode-30-days-js/reduce": ["packages/reduce/src/index.ts"],
-      "@leetcode-30-days-js/sleep": ["packages/sleep/src/index.ts"]
+      "@leetcode-30-days-js/sleep": ["packages/sleep/src/index.ts"],
+      "@leetcode-30-days-js/time-limit": ["packages/time-limit/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
