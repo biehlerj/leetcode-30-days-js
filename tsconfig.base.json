@@ -34,6 +34,9 @@
       "@leetcode-30-days-js/json-stringify": [
         "packages/json-stringify/src/index.ts"
       ],
+      "@leetcode-30-days-js/json-to-matrix": [
+        "packages/json-to-matrix/src/index.js"
+      ],
       "@leetcode-30-days-js/map": ["packages/map/src/index.ts"],
       "@leetcode-30-days-js/memoize": ["packages/memoize/src/index.ts"],
       "@leetcode-30-days-js/once": ["packages/once/src/index.ts"],
