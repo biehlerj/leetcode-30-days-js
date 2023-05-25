@@ -18,6 +18,7 @@
       "@leetcode-30-days-js/are-deeply-equal": [
         "packages/are-deeply-equal/src/index.ts"
       ],
+      "@leetcode-30-days-js/chunk": ["packages/chunk/src/index.ts"],
       "@leetcode-30-days-js/compose": ["packages/compose/src/index.ts"],
       "@leetcode-30-days-js/create-counter": [
         "packages/create-counter/src/index.ts"
