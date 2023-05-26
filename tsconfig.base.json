@@ -32,6 +32,7 @@
       "@leetcode-30-days-js/curry": ["packages/curry/src/index.ts"],
       "@leetcode-30-days-js/debounce": ["packages/debounce/src/index.ts"],
       "@leetcode-30-days-js/filter": ["packages/filter/src/index.ts"],
+      "@leetcode-30-days-js/flat": ["packages/flat/src/index.ts"],
       "@leetcode-30-days-js/json-stringify": [
         "packages/json-stringify/src/index.ts"
       ],
