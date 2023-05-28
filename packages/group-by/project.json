@@ -1,0 +1,26 @@
+{
+  "name": "group-by",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/group-by/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/group-by",
+        "main": "packages/group-by/src/index.ts",
+        "tsConfig": "packages/group-by/tsconfig.lib.json",
+        "assets": ["packages/group-by/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/group-by/**/*.ts"]
+      }
+    }
+  },
+  "tags": []
+}
