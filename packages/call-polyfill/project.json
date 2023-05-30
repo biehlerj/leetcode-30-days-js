@@ -1,0 +1,26 @@
+{
+  "name": "call-polyfill",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/call-polyfill/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/call-polyfill",
+        "main": "packages/call-polyfill/src/index.ts",
+        "tsConfig": "packages/call-polyfill/tsconfig.lib.json",
+        "assets": ["packages/call-polyfill/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/call-polyfill/**/*.ts"]
+      }
+    }
+  },
+  "tags": []
+}

@@ -18,6 +18,9 @@
       "@leetcode-30-days-js/are-deeply-equal": [
         "packages/are-deeply-equal/src/index.ts"
       ],
+      "@leetcode-30-days-js/call-polyfill": [
+        "packages/call-polyfill/src/index.ts"
+      ],
       "@leetcode-30-days-js/check-if-instance-of": [
         "packages/check-if-instance-of/src/index.ts"
       ],
