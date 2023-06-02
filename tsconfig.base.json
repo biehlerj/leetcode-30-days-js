@@ -43,6 +43,9 @@
       "@leetcode-30-days-js/event-emitter": [
         "packages/event-emitter/src/index.ts"
       ],
+      "@leetcode-30-days-js/fib-generator": [
+        "packages/fib-generator/src/index.ts"
+      ],
       "@leetcode-30-days-js/filter": ["packages/filter/src/index.ts"],
       "@leetcode-30-days-js/flat": ["packages/flat/src/index.ts"],
       "@leetcode-30-days-js/group-by": ["packages/group-by/src/index.ts"],
