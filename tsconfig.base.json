@@ -49,6 +49,9 @@
       "@leetcode-30-days-js/filter": ["packages/filter/src/index.ts"],
       "@leetcode-30-days-js/flat": ["packages/flat/src/index.ts"],
       "@leetcode-30-days-js/group-by": ["packages/group-by/src/index.ts"],
+      "@leetcode-30-days-js/inorder-traversal": [
+        "packages/inorder-traversal/src/index.ts"
+      ],
       "@leetcode-30-days-js/json-stringify": [
         "packages/json-stringify/src/index.ts"
       ],
