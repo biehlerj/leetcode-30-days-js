@@ -14,8 +14,8 @@ dependencies:
 
 devDependencies:
   '@nx/eslint-plugin':
-    specifier: 16.5.5
-    version: 16.5.5(@typescript-eslint/parser@5.62.0)(eslint-config-prettier@8.10.0)(eslint@8.46.0)(nx@16.6.0)(typescript@5.1.6)
+    specifier: 16.6.0
+    version: 16.6.0(@types/node@20.4.8)(@typescript-eslint/parser@5.62.0)(eslint-config-prettier@8.10.0)(eslint@8.46.0)(nx@16.6.0)(typescript@5.1.6)
   '@nx/jest':
     specifier: 16.6.0
     version: 16.6.0(@types/node@20.4.8)(nx@16.6.0)(ts-node@10.9.1)(typescript@5.1.6)
@@ -57,7 +57,7 @@ devDependencies:
     version: 16.6.0
   nx-cloud:
     specifier: latest
-    version: 16.2.0
+    version: 16.3.0
   prettier:
     specifier: ^3.0.0
     version: 3.0.0
@@ -2772,14 +2772,16 @@ packages:
       - nx
     dev: true
 
-  /@nrwl/eslint-plugin-nx@16.5.5(@typescript-eslint/parser@5.62.0)(eslint-config-prettier@8.10.0)(eslint@8.46.0)(nx@16.6.0)(typescript@5.1.6):
-    resolution: {integrity: sha512-Y5bAOb3l1cpvWmMOvKa99JL7RQ9WAO7BaNxM3IqgqgrUCrp/sOOWOMVZCUYhpYqlWeQl8iTAo6jAGAab/4UbFg==}
+  /@nrwl/eslint-plugin-nx@16.6.0(@types/node@20.4.8)(@typescript-eslint/parser@5.62.0)(eslint-config-prettier@8.10.0)(eslint@8.46.0)(nx@16.6.0)(typescript@5.1.6):
+    resolution: {integrity: sha512-kNT8Q6buTX9kIYgiZZRFcr2bxSgIQR3tpbBlzXhKFeQE31w53fVWbdX3oPbn+VPgza84beVCEUbyOHexA4X82Q==}
     dependencies:
-      '@nx/eslint-plugin': 16.5.5(@typescript-eslint/parser@5.62.0)(eslint-config-prettier@8.10.0)(eslint@8.46.0)(nx@16.6.0)(typescript@5.1.6)
+      '@nx/eslint-plugin': 16.6.0(@types/node@20.4.8)(@typescript-eslint/parser@5.62.0)(eslint-config-prettier@8.10.0)(eslint@8.46.0)(nx@16.6.0)(typescript@5.1.6)
     transitivePeerDependencies:
       - '@babel/traverse'
       - '@swc-node/register'
       - '@swc/core'
+      - '@swc/wasm'
+      - '@types/node'
       - '@typescript-eslint/parser'
       - debug
       - eslint
@@ -2857,10 +2859,10 @@ packages:
       - verdaccio
     dev: true
 
-  /@nrwl/nx-cloud@16.2.0:
-    resolution: {integrity: sha512-NNSXBxI6DRndO5SRtvqi9qtTdknbqUNHIJO511S61YmdeQM18OflUB7ejyRQvQVhkB+XpGutSIp/BJPLocJf+w==}
+  /@nrwl/nx-cloud@16.3.0:
+    resolution: {integrity: sha512-nJrGsVufhY74KcP7kM7BqFOGAoO5OEF6+wfiM295DgmEG9c1yW+x5QiQaC42K9SWYn/eKQa1X7466ZA5lynXoQ==}
     dependencies:
-      nx-cloud: 16.2.0
+      nx-cloud: 16.3.0
     transitivePeerDependencies:
       - debug
     dev: true
@@ -2950,8 +2952,8 @@ packages:
       tslib: 2.6.1
     dev: true
 
-  /@nx/eslint-plugin@16.5.5(@typescript-eslint/parser@5.62.0)(eslint-config-prettier@8.10.0)(eslint@8.46.0)(nx@16.6.0)(typescript@5.1.6):
-    resolution: {integrity: sha512-rwCF4USJ6J+XG4AHgJ9zyR9DTQjxwKMA9dC2wbzSOei3K67q3TfKkG4TVU3O94vIPU23qmP0lWuPqKHbVrp/vA==}
+  /@nx/eslint-plugin@16.6.0(@types/node@20.4.8)(@typescript-eslint/parser@5.62.0)(eslint-config-prettier@8.10.0)(eslint@8.46.0)(nx@16.6.0)(typescript@5.1.6):
+    resolution: {integrity: sha512-fTqGTjAiFGZsYrs5OgwtL7bJ5qaNS6mW2/d/jZiN1oiSLBaJUyceKZWs0y5dvOMlJOo0/UG4hbBoMJGBBBWx+g==}
     peerDependencies:
       '@typescript-eslint/parser': ^5.60.1
       eslint-config-prettier: ^8.1.0
@@ -2959,9 +2961,9 @@ packages:
       eslint-config-prettier:
         optional: true
     dependencies:
-      '@nrwl/eslint-plugin-nx': 16.5.5(@typescript-eslint/parser@5.62.0)(eslint-config-prettier@8.10.0)(eslint@8.46.0)(nx@16.6.0)(typescript@5.1.6)
-      '@nx/devkit': 16.5.5(nx@16.6.0)
-      '@nx/js': 16.5.5(nx@16.6.0)(typescript@5.1.6)
+      '@nrwl/eslint-plugin-nx': 16.6.0(@types/node@20.4.8)(@typescript-eslint/parser@5.62.0)(eslint-config-prettier@8.10.0)(eslint@8.46.0)(nx@16.6.0)(typescript@5.1.6)
+      '@nx/devkit': 16.6.0(nx@16.6.0)
+      '@nx/js': 16.6.0(@types/node@20.4.8)(nx@16.6.0)(typescript@5.1.6)
       '@typescript-eslint/parser': 5.62.0(eslint@8.46.0)(typescript@5.1.6)
       '@typescript-eslint/type-utils': 5.62.0(eslint@8.46.0)(typescript@5.1.6)
       '@typescript-eslint/utils': 5.62.0(eslint@8.46.0)(typescript@5.1.6)
@@ -2970,10 +2972,13 @@ packages:
       eslint-config-prettier: 8.10.0(eslint@8.46.0)
       jsonc-eslint-parser: 2.3.0
       semver: 7.5.3
+      tslib: 2.6.1
     transitivePeerDependencies:
       - '@babel/traverse'
       - '@swc-node/register'
       - '@swc/core'
+      - '@swc/wasm'
+      - '@types/node'
       - debug
       - eslint
       - nx
@@ -3644,7 +3649,7 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dependencies:
       '@typescript-eslint/types': 5.62.0
-      eslint-visitor-keys: 3.4.1
+      eslint-visitor-keys: 3.4.2
     dev: true
 
   /@yarnpkg/lockfile@1.1.0:
@@ -4506,11 +4511,6 @@ packages:
       estraverse: 5.3.0
     dev: true
 
-  /eslint-visitor-keys@3.4.1:
-    resolution: {integrity: sha512-pZnmmLwYzf+kWaM/Qgrvpen51upAktaaiI01nsJD/Yr3lMOdNtq0cxkrrg16w64VtisN6okbs7Q8AfGqj4c9fA==}
-    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
-    dev: true
-
   /eslint-visitor-keys@3.4.2:
     resolution: {integrity: sha512-8drBzUEyZ2llkpCA67iYrgEssKDUu68V8ChqqOfFupIaG/LCVPUT+CoGJpT77zJprs4T/W7p07LP7zAIMuweVw==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
@@ -4560,15 +4560,6 @@ packages:
       text-table: 0.2.0
     transitivePeerDependencies:
       - supports-color
-    dev: true
-
-  /espree@9.6.0:
-    resolution: {integrity: sha512-1FH/IiruXZ84tpUlm0aCUEwMl2Ho5ilqVh0VvQXw+byAz/4SAciyHLlfmL5WYqsvD38oymdUwBss0LtK8m4s/A==}
-    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
-    dependencies:
-      acorn: 8.9.0
-      acorn-jsx: 5.3.2(acorn@8.9.0)
-      eslint-visitor-keys: 3.4.1
     dev: true
 
   /espree@9.6.1:
@@ -6008,8 +5999,8 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dependencies:
       acorn: 8.9.0
-      eslint-visitor-keys: 3.4.1
-      espree: 9.6.0
+      eslint-visitor-keys: 3.4.2
+      espree: 9.6.1
       semver: 7.5.3
     dev: true
 
@@ -6243,11 +6234,11 @@ packages:
     resolution: {integrity: sha512-NHj4rzRo0tQdijE9ZqAx6kYDcoRwYwSYzCA8MY3JzfxlrvEU0jhnhJT9BhqhJs7I/dKcrDm6TyulaRqZPIhN5g==}
     dev: true
 
-  /nx-cloud@16.2.0:
-    resolution: {integrity: sha512-LESjpYO6Ksg4AjbXnzH9qZqyQzTauwFFUITeyz5NAVEFKaBTEICyupSk+3Xq3v4QQurFJOE3rShhYuSQP5moeQ==}
+  /nx-cloud@16.3.0:
+    resolution: {integrity: sha512-hmNgpeLO4v4WDSWa8YhwX+q+9ohIyY8iqxlWyIKixWzQH2XfRgYFjOLH4IDLGOlKa3hg7MB6+4+75cK9CfSmKw==}
     hasBin: true
     dependencies:
-      '@nrwl/nx-cloud': 16.2.0
+      '@nrwl/nx-cloud': 16.3.0
       axios: 1.1.3
       chalk: 4.1.2
       dotenv: 10.0.0
