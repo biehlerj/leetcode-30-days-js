@@ -8,7 +8,7 @@
   "private": true,
   "dependencies": {
     "@datastructures-js/priority-queue": "^6.3.0",
-    "tslib": "^2.6.1"
+    "tslib": "^2.6.2"
   },
   "devDependencies": {
     "@nx/eslint-plugin": "16.7.4",
