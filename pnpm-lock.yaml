@@ -26,8 +26,8 @@ devDependencies:
     specifier: 16.7.2
     version: 16.7.2(@types/node@20.5.1)(eslint@8.48.0)(nx@16.6.0)(typescript@5.1.6)
   '@nx/workspace':
-    specifier: 16.6.0
-    version: 16.6.0
+    specifier: 16.7.4
+    version: 16.7.4
   '@types/jest':
     specifier: ^29.5.3
     version: 29.5.3
@@ -1745,14 +1745,6 @@ packages:
       fastq: 1.15.0
     dev: true
 
-  /@nrwl/devkit@16.6.0(nx@16.6.0):
-    resolution: {integrity: sha512-xZEN6wfA1uJwv+FVRQFOHsCcpvGvIYGx2zutbzungDodWkfzlJ3tzIGqYjIpPCBVT83erM6Gscnka2W46AuKfA==}
-    dependencies:
-      '@nx/devkit': 16.6.0(nx@16.6.0)
-    transitivePeerDependencies:
-      - nx
-    dev: true
-
   /@nrwl/devkit@16.7.2(nx@16.6.0):
     resolution: {integrity: sha512-xJIQFtmPoLFWX5gKl6QOGMzXjn+TZPkTMv5pQ12y2StpuGa3T2n8m7TnHPHGAk43ayiPDcDD97cZ75Fue+mK/w==}
     dependencies:
@@ -1765,14 +1757,6 @@ packages:
     resolution: {integrity: sha512-xJIQFtmPoLFWX5gKl6QOGMzXjn+TZPkTMv5pQ12y2StpuGa3T2n8m7TnHPHGAk43ayiPDcDD97cZ75Fue+mK/w==}
     dependencies:
       '@nx/devkit': 16.7.2(nx@16.7.2)
-    transitivePeerDependencies:
-      - nx
-    dev: true
-
-  /@nrwl/devkit@16.7.4(nx@16.6.0):
-    resolution: {integrity: sha512-Gt2q3cqDWzGP1woavGIo4bl8g9YaXic/Xfsl7qPq0LHJedLj49p1vXetB0wawkavSE2MTyo7yDh6YDK/38XoLw==}
-    dependencies:
-      '@nx/devkit': 16.7.4(nx@16.6.0)
     transitivePeerDependencies:
       - nx
     dev: true
@@ -1921,16 +1905,6 @@ packages:
       - debug
     dev: true
 
-  /@nrwl/workspace@16.6.0:
-    resolution: {integrity: sha512-Bt2o1tU1ZYQKNtnBbyg62T1ELEdlNwxb5C6MPENnlDB/kkmiLXvPFTzMV2lgDZvMLP6eLazq98P2TQ8jCbY4lA==}
-    dependencies:
-      '@nx/workspace': 16.6.0
-    transitivePeerDependencies:
-      - '@swc-node/register'
-      - '@swc/core'
-      - debug
-    dev: true
-
   /@nrwl/workspace@16.7.2:
     resolution: {integrity: sha512-PTYFfSG64DBJPII/AiUQXP9uuPRfllVBMKKLwvMgVp9siClvgmyctlf5XONlbWfYNJ5jRI7/To8FF52EuQ95Zg==}
     dependencies:
@@ -1949,20 +1923,6 @@ packages:
       - '@swc-node/register'
       - '@swc/core'
       - debug
-    dev: true
-
-  /@nx/devkit@16.6.0(nx@16.6.0):
-    resolution: {integrity: sha512-rhJ0y+MSPHDuoZPxsOYdj/n5ks+gK74TIMgTb8eZgPT/uR86a4oxf62wUQXgECedR5HzLE2HunbnoLhhJXmpJw==}
-    peerDependencies:
-      nx: '>= 15 <= 17'
-    dependencies:
-      '@nrwl/devkit': 16.6.0(nx@16.6.0)
-      ejs: 3.1.9
-      ignore: 5.2.4
-      nx: 16.6.0
-      semver: 7.5.3
-      tmp: 0.2.1
-      tslib: 2.6.2
     dev: true
 
   /@nx/devkit@16.7.2(nx@16.6.0):
@@ -2000,7 +1960,7 @@ packages:
     peerDependencies:
       nx: '>= 15 <= 17'
     dependencies:
-      '@nrwl/devkit': 16.7.4(nx@16.6.0)
+      '@nrwl/devkit': 16.7.4(nx@16.7.4)
       ejs: 3.1.9
       enquirer: 2.3.6
       ignore: 5.2.4
@@ -2482,23 +2442,6 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
-
-  /@nx/workspace@16.6.0:
-    resolution: {integrity: sha512-rh+qTQ/Ahszezx+aLjZfpej314w2mrwz2eJAn6LQmlsSnOLHsVIoVRDAGyqT2OF+29K2r5BQ0jRiB3zyYrb5MQ==}
-    dependencies:
-      '@nrwl/workspace': 16.6.0
-      '@nx/devkit': 16.6.0(nx@16.6.0)
-      chalk: 4.1.2
-      ignore: 5.2.4
-      nx: 16.6.0
-      rxjs: 7.8.1
-      tslib: 2.6.2
-      yargs-parser: 21.1.1
-    transitivePeerDependencies:
-      - '@swc-node/register'
-      - '@swc/core'
-      - debug
-    dev: true
 
   /@nx/workspace@16.7.2:
     resolution: {integrity: sha512-6bI2EBXxbMcUI/Gtin+M95l9kQdoov9UIB97j8pX/V/4K8Xvegn01+MF99De9/oApkQjNehmR2dpi4hPo0FFUw==}
