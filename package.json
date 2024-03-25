@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "@nx/eslint-plugin": "16.10.0",
-    "@nx/jest": "18.0.7",
+    "@nx/jest": "18.1.2",
     "@nx/js": "18.1.2",
     "@nx/linter": "18.0.5",
     "@nx/workspace": "18.0.7",
