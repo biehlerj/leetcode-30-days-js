@@ -17,8 +17,8 @@ devDependencies:
     specifier: 16.10.0
     version: 16.10.0(@types/node@20.12.7)(@typescript-eslint/parser@5.62.0)(eslint-config-prettier@8.10.0)(eslint@8.57.0)(nx@16.8.1)(typescript@5.4.5)
   '@nx/jest':
-    specifier: 18.3.3
-    version: 18.3.3(@types/node@20.12.7)(nx@16.8.1)(ts-node@10.9.2)(typescript@5.4.5)
+    specifier: 18.3.4
+    version: 18.3.4(@types/node@20.12.7)(nx@16.8.1)(ts-node@10.9.2)(typescript@5.4.5)
   '@nx/js':
     specifier: 18.3.3
     version: 18.3.3(@types/node@20.12.7)(nx@16.8.1)(typescript@5.4.5)
@@ -2844,10 +2844,10 @@ packages:
       - verdaccio
     dev: true
 
-  /@nrwl/jest@18.3.3(@types/node@20.12.7)(nx@16.8.1)(ts-node@10.9.2)(typescript@5.4.5):
-    resolution: {integrity: sha512-BPI0mIbmjTHFb0/qtMND59ECld7gorV+SEVLwf4BLl7SWumVB2gLAA2+yx71cvF1jO4R5Ndi2FrBwBC9E2Va5Q==}
+  /@nrwl/jest@18.3.4(@types/node@20.12.7)(nx@16.8.1)(ts-node@10.9.2)(typescript@5.4.5):
+    resolution: {integrity: sha512-pIYd8WBQz6DKfhIKkZn9VsNBPR0QGnbAdI9AfrQPoGfj19x3tzqLSjcg/O5UvIs6174U1b+0ccxWmQvFep22Kw==}
     dependencies:
-      '@nx/jest': 18.3.3(@types/node@20.12.7)(nx@16.8.1)(ts-node@10.9.2)(typescript@5.4.5)
+      '@nx/jest': 18.3.4(@types/node@20.12.7)(nx@16.8.1)(ts-node@10.9.2)(typescript@5.4.5)
     transitivePeerDependencies:
       - '@babel/traverse'
       - '@swc-node/register'
@@ -3156,14 +3156,14 @@ packages:
       - verdaccio
     dev: true
 
-  /@nx/jest@18.3.3(@types/node@20.12.7)(nx@16.8.1)(ts-node@10.9.2)(typescript@5.4.5):
-    resolution: {integrity: sha512-AwkwYSJqu0vrDFMxKAc3lb0yHZFhsD8rX6rMMwe/fZMlAYml9FvGCp/ixWpcRWIo/1t3pxiF3Vejk9+oq/Avfw==}
+  /@nx/jest@18.3.4(@types/node@20.12.7)(nx@16.8.1)(ts-node@10.9.2)(typescript@5.4.5):
+    resolution: {integrity: sha512-sWbrhz8RYZ7j1uUbyB7tvulnRncNwtnEEMIGYUrHSQB1of+aG+FA2VtI3KCoWrfzMc5EDl7DLpKY1VMW2ArWhQ==}
     dependencies:
       '@jest/reporters': 29.7.0
       '@jest/test-result': 29.7.0
-      '@nrwl/jest': 18.3.3(@types/node@20.12.7)(nx@16.8.1)(ts-node@10.9.2)(typescript@5.4.5)
-      '@nx/devkit': 18.3.3(nx@16.8.1)
-      '@nx/js': 18.3.3(@types/node@20.12.7)(nx@16.8.1)(typescript@5.4.5)
+      '@nrwl/jest': 18.3.4(@types/node@20.12.7)(nx@16.8.1)(ts-node@10.9.2)(typescript@5.4.5)
+      '@nx/devkit': 18.3.4(nx@16.8.1)
+      '@nx/js': 18.3.4(@types/node@20.12.7)(nx@16.8.1)(typescript@5.4.5)
       '@phenomnomnominal/tsquery': 5.0.1(typescript@5.4.5)
       chalk: 4.1.2
       identity-obj-proxy: 3.0.0
