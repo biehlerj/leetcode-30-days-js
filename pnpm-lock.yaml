@@ -20,8 +20,8 @@ devDependencies:
     specifier: 18.3.4
     version: 18.3.4(@types/node@20.12.8)(nx@16.8.1)(ts-node@10.9.2)(typescript@5.4.5)
   '@nx/js':
-    specifier: 18.3.4
-    version: 18.3.4(@types/node@20.12.8)(nx@16.8.1)(typescript@5.4.5)
+    specifier: 19.0.2
+    version: 19.0.2(@types/node@20.12.8)(nx@16.8.1)(typescript@5.4.5)
   '@nx/linter':
     specifier: 18.3.4
     version: 18.3.4(@types/node@20.12.8)(nx@16.8.1)
@@ -2808,6 +2808,14 @@ packages:
       - nx
     dev: true
 
+  /@nrwl/devkit@19.0.2(nx@16.8.1):
+    resolution: {integrity: sha512-h/hBltFnJLrDVxVJYcU/qAba9NGfrSp1q4t9U9tl8B8InMtRRgjFKX/whRZd6PE7ZTN7kqr0+XRTETFKv5heDA==}
+    dependencies:
+      '@nx/devkit': 19.0.2(nx@16.8.1)
+    transitivePeerDependencies:
+      - nx
+    dev: true
+
   /@nrwl/devkit@19.0.2(nx@19.0.2):
     resolution: {integrity: sha512-h/hBltFnJLrDVxVJYcU/qAba9NGfrSp1q4t9U9tl8B8InMtRRgjFKX/whRZd6PE7ZTN7kqr0+XRTETFKv5heDA==}
     dependencies:
@@ -2877,6 +2885,23 @@ packages:
     resolution: {integrity: sha512-oyiMoxzDVGQe5E4UFGO/WAOU211HEIdRxSEOfs1lPhvA8lKbUa0IWDqPOugNws/YHAr+vUTU3sZDJ3uU3RJuYQ==}
     dependencies:
       '@nx/js': 18.3.4(@types/node@20.12.8)(nx@16.8.1)(typescript@5.4.5)
+    transitivePeerDependencies:
+      - '@babel/traverse'
+      - '@swc-node/register'
+      - '@swc/core'
+      - '@swc/wasm'
+      - '@types/node'
+      - debug
+      - nx
+      - supports-color
+      - typescript
+      - verdaccio
+    dev: true
+
+  /@nrwl/js@19.0.2(@types/node@20.12.8)(nx@16.8.1)(typescript@5.4.5):
+    resolution: {integrity: sha512-6bWHnC3rhRFmuUGt7G/0NGTAxm2ig9MpXzCzERYEACcS3fEN4QDMLbUlyojjiRWbQWeCPz9adxWTgkckM4Ispg==}
+    dependencies:
+      '@nx/js': 19.0.2(@types/node@20.12.8)(nx@16.8.1)(typescript@5.4.5)
     transitivePeerDependencies:
       - '@babel/traverse'
       - '@swc-node/register'
@@ -3032,6 +3057,23 @@ packages:
       enquirer: 2.3.6
       ignore: 5.2.4
       nx: 18.3.4
+      semver: 7.5.4
+      tmp: 0.2.1
+      tslib: 2.6.2
+      yargs-parser: 21.1.1
+    dev: true
+
+  /@nx/devkit@19.0.2(nx@16.8.1):
+    resolution: {integrity: sha512-qHBWQ3ZJ4vO8AVdSlz/u/GXDrDxVsBjC1/pY1ImycnUP4NfOtmBlYdhd5aB9XvWcujSmOap0ZJGr1iapYKoWxQ==}
+    peerDependencies:
+      nx: '>= 17 <= 20'
+    dependencies:
+      '@nrwl/devkit': 19.0.2(nx@16.8.1)
+      ejs: 3.1.9
+      enquirer: 2.3.6
+      ignore: 5.2.4
+      minimatch: 9.0.3
+      nx: 16.8.1
       semver: 7.5.4
       tmp: 0.2.1
       tslib: 2.6.2
@@ -3219,6 +3261,55 @@ packages:
       '@nx/devkit': 18.3.4(nx@16.8.1)
       '@nx/workspace': 18.3.4
       '@phenomnomnominal/tsquery': 5.0.1(typescript@5.4.5)
+      babel-plugin-const-enum: 1.2.0(@babel/core@7.23.9)
+      babel-plugin-macros: 2.8.0
+      babel-plugin-transform-typescript-metadata: 0.3.2(@babel/core@7.23.9)
+      chalk: 4.1.2
+      columnify: 1.6.0
+      detect-port: 1.5.1
+      fast-glob: 3.2.7
+      fs-extra: 11.1.1
+      ignore: 5.2.4
+      js-tokens: 4.0.0
+      minimatch: 9.0.3
+      npm-package-arg: 11.0.1
+      npm-run-path: 4.0.1
+      ora: 5.3.0
+      semver: 7.5.4
+      source-map-support: 0.5.19
+      ts-node: 10.9.1(@types/node@20.12.8)(typescript@5.4.5)
+      tsconfig-paths: 4.2.0
+      tslib: 2.6.2
+    transitivePeerDependencies:
+      - '@babel/traverse'
+      - '@swc-node/register'
+      - '@swc/core'
+      - '@swc/wasm'
+      - '@types/node'
+      - debug
+      - nx
+      - supports-color
+      - typescript
+    dev: true
+
+  /@nx/js@19.0.2(@types/node@20.12.8)(nx@16.8.1)(typescript@5.4.5):
+    resolution: {integrity: sha512-pAA9/mFGnBwpF/x+80dSWHZIxY0M1YtgcabQYdQmZ8zwdYOtSkJwuibFvPRkUxqVg0F4E0nTuJ4R1uruSe9P8Q==}
+    peerDependencies:
+      verdaccio: ^5.0.4
+    peerDependenciesMeta:
+      verdaccio:
+        optional: true
+    dependencies:
+      '@babel/core': 7.23.9
+      '@babel/plugin-proposal-decorators': 7.22.7(@babel/core@7.23.9)
+      '@babel/plugin-transform-class-properties': 7.23.3(@babel/core@7.23.9)
+      '@babel/plugin-transform-runtime': 7.23.9(@babel/core@7.23.9)
+      '@babel/preset-env': 7.23.9(@babel/core@7.23.9)
+      '@babel/preset-typescript': 7.22.5(@babel/core@7.23.9)
+      '@babel/runtime': 7.22.6
+      '@nrwl/js': 19.0.2(@types/node@20.12.8)(nx@16.8.1)(typescript@5.4.5)
+      '@nx/devkit': 19.0.2(nx@16.8.1)
+      '@nx/workspace': 19.0.2
       babel-plugin-const-enum: 1.2.0(@babel/core@7.23.9)
       babel-plugin-macros: 2.8.0
       babel-plugin-transform-typescript-metadata: 0.3.2(@babel/core@7.23.9)
