@@ -26,8 +26,8 @@ devDependencies:
     specifier: 19.0.2
     version: 19.0.2(@types/node@20.12.12)(nx@16.8.1)
   '@nx/workspace':
-    specifier: 19.0.2
-    version: 19.0.2
+    specifier: 19.0.4
+    version: 19.0.4
   '@types/jest':
     specifier: ^29.5.12
     version: 29.5.12
