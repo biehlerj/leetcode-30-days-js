@@ -23,8 +23,8 @@ devDependencies:
     specifier: 19.2.2
     version: 19.2.2(@types/node@20.14.2)(nx@19.1.1)(typescript@5.4.5)
   '@nx/linter':
-    specifier: 19.2.2
-    version: 19.2.2(@types/node@20.14.2)(eslint@8.57.0)(nx@19.1.1)
+    specifier: 19.3.0
+    version: 19.3.0(@types/node@20.14.2)(eslint@8.57.0)(nx@19.1.1)
   '@nx/workspace':
     specifier: 19.1.1
     version: 19.1.1
@@ -3177,8 +3177,8 @@ packages:
       - verdaccio
     dev: true
 
-  /@nx/eslint@19.2.2(@types/node@20.14.2)(eslint@8.57.0)(nx@19.1.1):
-    resolution: {integrity: sha512-py7esWj3mDZARjukptF6kZj4wmPy//xLVnwUb2n6GiNVqSy1jhhVsv44IJC7UN0+YcItLphmNIBTKNrj3mNU/g==}
+  /@nx/eslint@19.3.0(@types/node@20.14.2)(eslint@8.57.0)(nx@19.1.1):
+    resolution: {integrity: sha512-x4SrQMnLnX+jM7KGsj+ReOvEHo5S0chLPfJhf0KFnXnzWoWcrq18z0lZ33JaAWWBsjexozDTld2wHj7nkvcjCg==}
     peerDependencies:
       '@zkochan/js-yaml': 0.0.7
       eslint: ^8.0.0 || ^9.0.0
@@ -3186,9 +3186,9 @@ packages:
       '@zkochan/js-yaml':
         optional: true
     dependencies:
-      '@nx/devkit': 19.2.2(nx@19.1.1)
-      '@nx/js': 19.2.2(@types/node@20.14.2)(nx@19.1.1)(typescript@5.4.5)
-      '@nx/linter': 19.2.2(@types/node@20.14.2)(eslint@8.57.0)(nx@19.1.1)
+      '@nx/devkit': 19.3.0(nx@19.1.1)
+      '@nx/js': 19.3.0(@types/node@20.14.2)(nx@19.1.1)(typescript@5.4.5)
+      '@nx/linter': 19.3.0(@types/node@20.14.2)(eslint@8.57.0)(nx@19.1.1)
       eslint: 8.57.0
       semver: 7.5.4
       tslib: 2.6.2
@@ -3387,10 +3387,10 @@ packages:
       - typescript
     dev: true
 
-  /@nx/linter@19.2.2(@types/node@20.14.2)(eslint@8.57.0)(nx@19.1.1):
-    resolution: {integrity: sha512-Q7H/Y6W3Xc+Yej1oih6LrBhbL5zSui+eNac6RvKBhj23muQlMwbuQ96bEjm3E4ti2sm0/ldF5Uc8/E4AvkK8qQ==}
+  /@nx/linter@19.3.0(@types/node@20.14.2)(eslint@8.57.0)(nx@19.1.1):
+    resolution: {integrity: sha512-+bpDyXjHBTuVHvbQ7m2hG86m1jJNAPOmnoad/2ZPoQM4LjBTOW8M7s2upZPewjnAJs8Fv02281mO+ORbhW7L9A==}
     dependencies:
-      '@nx/eslint': 19.2.2(@types/node@20.14.2)(eslint@8.57.0)(nx@19.1.1)
+      '@nx/eslint': 19.3.0(@types/node@20.14.2)(eslint@8.57.0)(nx@19.1.1)
     transitivePeerDependencies:
       - '@babel/traverse'
       - '@swc-node/register'
