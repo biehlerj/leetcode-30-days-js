@@ -28,8 +28,8 @@ importers:
         specifier: 19.4.3
         version: 19.4.3(@babel/traverse@7.23.9)(@types/node@20.14.10)(@zkochan/js-yaml@0.0.7)(eslint@8.57.0)(nx@19.4.1)
       '@nx/workspace':
-        specifier: 19.4.1
-        version: 19.4.1
+        specifier: 19.4.3
+        version: 19.4.3
       '@types/jest':
         specifier: ^29.5.12
         version: 29.5.12
@@ -868,9 +868,6 @@ packages:
   '@nrwl/devkit@16.10.0':
     resolution: {integrity: sha512-fRloARtsDQoQgQ7HKEy0RJiusg/HSygnmg4gX/0n/Z+SUS+4KoZzvHjXc6T5ZdEiSjvLypJ+HBM8dQzIcVACPQ==}
 
-  '@nrwl/devkit@19.4.1':
-    resolution: {integrity: sha512-BVo735k+HgCQ78fHi/yDFN7n0kUbCujyASm+iu6BKLi0b2aPi9Dw+Igztiv38g/Gyjjapos0O39XLpbcoGnw3Q==}
-
   '@nrwl/devkit@19.4.3':
     resolution: {integrity: sha512-1cu4h3aqYR0jgrurqw86ZeK94YYA2b11Klw2rBSvUaK5lEuQz47gImMvLjwkbVfthFp7swn1225DVP/seaAHpg==}
 
@@ -904,9 +901,6 @@ packages:
   '@nrwl/workspace@16.10.0':
     resolution: {integrity: sha512-fZeNxhFs/2cm326NebfJIgSI3W4KZN94WGS46wlIBrUUGP5/vwHYsi09Kx6sG1kRkAuZVtgJ33uU2F6xcAWzUA==}
 
-  '@nrwl/workspace@19.4.1':
-    resolution: {integrity: sha512-PUlxo7nIckj6PicrSHCI0JVLmspdyhQVHdcdh435Gub0bRd9Pw+iHZUPlyvnBRs/ktmfe2v9MmghLZvRE5WNxg==}
-
   '@nrwl/workspace@19.4.3':
     resolution: {integrity: sha512-DsimNVxPA3dNMF2iWHV40TPoBxs54Q2xU+R2BfEEZALalqplQ9H3UrZ3KSYRlsIjkRCvH0QL6bOBy5sIbo5QFQ==}
 
@@ -914,11 +908,6 @@ packages:
     resolution: {integrity: sha512-IvKQqRJFDDiaj33SPfGd3ckNHhHi6ceEoqCbAP4UuMXOPPVOX6H0KVk+9tknkPb48B7jWIw6/AgOeWkBxPRO5w==}
     peerDependencies:
       nx: '>= 15 <= 17'
-
-  '@nx/devkit@19.4.1':
-    resolution: {integrity: sha512-vOUes8e8guFmbcpUcppUlx120Y52ovY46ZnKogOjnw5q7LN12Fvn68A2wBF8SYmyiYmPd56YtUV7A6LuS8Wd3w==}
-    peerDependencies:
-      nx: '>= 17 <= 20'
 
   '@nx/devkit@19.4.3':
     resolution: {integrity: sha512-Yf+Is6QpwGVTUJacg1lEispC7wRZMF1Td1rlMK4m/quZCVGcJ4nPxma0fhsLs6qGIK3RYa1qoGEH1gsG8W3w1g==}
@@ -1147,9 +1136,6 @@ packages:
 
   '@nx/workspace@16.10.0':
     resolution: {integrity: sha512-95Eq36bzq2hb095Zvg+Ru8o9oIeOE62tNGGpohBkZPKoK2CUTYEq0AZtdj1suXS82ukCFCyyZ/c/fwxL62HRZA==}
-
-  '@nx/workspace@19.4.1':
-    resolution: {integrity: sha512-2HhPdxe2+kOSc2T4kg2xKqCaQAGYBLfEf7XXGKKJFmZlr1RBp6+mutEzmWUw62BenKagPaIgPV6mfr2TSwzlYQ==}
 
   '@nx/workspace@19.4.3':
     resolution: {integrity: sha512-IjhFOD4FIAghTof9yFgJGrv55nAFrgEkdaE+Fr3GxyeDCy8UBxioL0DJPZIzYsnL2EcDPyyBLFn7aIEAAGneWg==}
@@ -4171,27 +4157,21 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.15.0
 
-  '@nrwl/devkit@16.10.0(nx@16.10.0)':
-    dependencies:
-      '@nx/devkit': 16.10.0(nx@16.10.0)
-    transitivePeerDependencies:
-      - nx
-
   '@nrwl/devkit@16.10.0(nx@19.4.1)':
     dependencies:
       '@nx/devkit': 16.10.0(nx@19.4.1)
     transitivePeerDependencies:
       - nx
 
-  '@nrwl/devkit@19.4.1(nx@19.4.1)':
-    dependencies:
-      '@nx/devkit': 19.4.1(nx@19.4.1)
-    transitivePeerDependencies:
-      - nx
-
   '@nrwl/devkit@19.4.3(nx@19.4.1)':
     dependencies:
       '@nx/devkit': 19.4.3(nx@19.4.1)
+    transitivePeerDependencies:
+      - nx
+
+  '@nrwl/devkit@19.4.3(nx@19.4.3)':
+    dependencies:
+      '@nx/devkit': 19.4.3(nx@19.4.3)
     transitivePeerDependencies:
       - nx
 
@@ -4234,21 +4214,6 @@ snapshots:
   '@nrwl/js@16.10.0(@babel/traverse@7.23.9)(@types/node@20.14.10)(nx@19.4.1)(typescript@5.5.3)':
     dependencies:
       '@nx/js': 16.10.0(@babel/traverse@7.23.9)(@types/node@20.14.10)(nx@19.4.1)(typescript@5.5.3)
-    transitivePeerDependencies:
-      - '@babel/traverse'
-      - '@swc-node/register'
-      - '@swc/core'
-      - '@swc/wasm'
-      - '@types/node'
-      - debug
-      - nx
-      - supports-color
-      - typescript
-      - verdaccio
-
-  '@nrwl/js@19.4.3(@babel/traverse@7.23.9)(@types/node@20.14.10)(nx@19.4.1)(typescript@5.4.5)':
-    dependencies:
-      '@nx/js': 19.4.3(@babel/traverse@7.23.9)(@types/node@20.14.10)(nx@19.4.1)(typescript@5.4.5)
     transitivePeerDependencies:
       - '@babel/traverse'
       - '@swc-node/register'
@@ -4317,14 +4282,6 @@ snapshots:
       - '@swc/core'
       - debug
 
-  '@nrwl/workspace@19.4.1':
-    dependencies:
-      '@nx/workspace': 19.4.1
-    transitivePeerDependencies:
-      - '@swc-node/register'
-      - '@swc/core'
-      - debug
-
   '@nrwl/workspace@19.4.3':
     dependencies:
       '@nx/workspace': 19.4.3
@@ -4335,7 +4292,7 @@ snapshots:
 
   '@nx/devkit@16.10.0(nx@16.10.0)':
     dependencies:
-      '@nrwl/devkit': 16.10.0(nx@16.10.0)
+      '@nrwl/devkit': 16.10.0(nx@19.4.1)
       ejs: 3.1.9
       enquirer: 2.3.6
       ignore: 5.2.4
@@ -4355,19 +4312,6 @@ snapshots:
       tmp: 0.2.1
       tslib: 2.6.3
 
-  '@nx/devkit@19.4.1(nx@19.4.1)':
-    dependencies:
-      '@nrwl/devkit': 19.4.1(nx@19.4.1)
-      ejs: 3.1.9
-      enquirer: 2.3.6
-      ignore: 5.2.4
-      minimatch: 9.0.3
-      nx: 19.4.1
-      semver: 7.5.4
-      tmp: 0.2.1
-      tslib: 2.6.3
-      yargs-parser: 21.1.1
-
   '@nx/devkit@19.4.3(nx@19.4.1)':
     dependencies:
       '@nrwl/devkit': 19.4.3(nx@19.4.1)
@@ -4383,7 +4327,7 @@ snapshots:
 
   '@nx/devkit@19.4.3(nx@19.4.3)':
     dependencies:
-      '@nrwl/devkit': 19.4.3(nx@19.4.1)
+      '@nrwl/devkit': 19.4.3(nx@19.4.3)
       ejs: 3.1.9
       enquirer: 2.3.6
       ignore: 5.2.4
@@ -4528,7 +4472,7 @@ snapshots:
       '@babel/preset-env': 7.23.9(@babel/core@7.23.9)
       '@babel/preset-typescript': 7.22.5(@babel/core@7.23.9)
       '@babel/runtime': 7.22.6
-      '@nrwl/js': 19.4.3(@babel/traverse@7.23.9)(@types/node@20.14.10)(nx@19.4.1)(typescript@5.4.5)
+      '@nrwl/js': 19.4.3(@babel/traverse@7.23.9)(@types/node@20.14.10)(nx@19.4.1)(typescript@5.5.3)
       '@nx/devkit': 19.4.3(nx@19.4.1)
       '@nx/workspace': 19.4.3
       babel-plugin-const-enum: 1.2.0(@babel/core@7.23.9)
@@ -4718,20 +4662,6 @@ snapshots:
       ignore: 5.2.4
       nx: 16.10.0
       rxjs: 7.8.1
-      tslib: 2.6.3
-      yargs-parser: 21.1.1
-    transitivePeerDependencies:
-      - '@swc-node/register'
-      - '@swc/core'
-      - debug
-
-  '@nx/workspace@19.4.1':
-    dependencies:
-      '@nrwl/workspace': 19.4.1
-      '@nx/devkit': 19.4.1(nx@19.4.1)
-      chalk: 4.1.2
-      enquirer: 2.3.6
-      nx: 19.4.1
       tslib: 2.6.3
       yargs-parser: 21.1.1
     transitivePeerDependencies:

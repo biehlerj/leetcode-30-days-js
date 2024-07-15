@@ -15,7 +15,7 @@
     "@nx/jest": "19.4.3",
     "@nx/js": "19.4.3",
     "@nx/linter": "19.4.3",
-    "@nx/workspace": "19.4.1",
+    "@nx/workspace": "19.4.3",
     "@types/jest": "^29.5.12",
     "@types/node": "20.14.10",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
