@@ -14,7 +14,7 @@
     "@nx/eslint-plugin": "16.10.0",
     "@nx/jest": "19.7.3",
     "@nx/js": "19.6.5",
-    "@nx/linter": "19.6.6",
+    "@nx/linter": "19.7.3",
     "@nx/workspace": "19.6.5",
     "@types/jest": "^29.5.12",
     "@types/node": "22.5.5",
