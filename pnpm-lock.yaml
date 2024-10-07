@@ -28,8 +28,8 @@ importers:
         specifier: 19.8.2
         version: 19.8.2(@babel/traverse@7.23.9)(@types/node@22.7.4)(@zkochan/js-yaml@0.0.7)(eslint@8.57.1)(nx@19.8.0)
       '@nx/workspace':
-        specifier: 19.8.0
-        version: 19.8.0
+        specifier: 20.0.0
+        version: 20.0.0
       '@types/jest':
         specifier: ^29.5.13
         version: 29.5.13
@@ -880,9 +880,6 @@ packages:
   '@nrwl/devkit@16.10.0':
     resolution: {integrity: sha512-fRloARtsDQoQgQ7HKEy0RJiusg/HSygnmg4gX/0n/Z+SUS+4KoZzvHjXc6T5ZdEiSjvLypJ+HBM8dQzIcVACPQ==}
 
-  '@nrwl/devkit@19.8.0':
-    resolution: {integrity: sha512-LehpQ2D1687+JWaUpW84NPuXsQuPosmts66LShPT4+6KozB4gd0hJGAXNXpjNs9CUfLyNf8rRdEeqNjWnPYEmA==}
-
   '@nrwl/devkit@19.8.2':
     resolution: {integrity: sha512-2l3Jb7loE8BnTKn6bl4MK0fKIQLAkl+OMBwo/+GedaqfDfQev+UEgBio38eOEdDHYDHH0lwhGdVQI/DpV4qicA==}
 
@@ -913,9 +910,6 @@ packages:
   '@nrwl/workspace@16.10.0':
     resolution: {integrity: sha512-fZeNxhFs/2cm326NebfJIgSI3W4KZN94WGS46wlIBrUUGP5/vwHYsi09Kx6sG1kRkAuZVtgJ33uU2F6xcAWzUA==}
 
-  '@nrwl/workspace@19.8.0':
-    resolution: {integrity: sha512-HSN0GML7RaVUSRD3lOc07atCjs4Vzs3Jgs9/7+zFtldKsmsY4GzYIWpJ4G6IDl9u3YJwTKtRmuj5BVI7G+ZGmw==}
-
   '@nrwl/workspace@19.8.2':
     resolution: {integrity: sha512-4yc1sDoQbEIgVBp6nd+ThozQayFznJFHzQ9s26Hw1BB4t+Juu/daHEh30mkFI3eFJqd0GAnBPqSOKQNGhDGobg==}
 
@@ -923,11 +917,6 @@ packages:
     resolution: {integrity: sha512-IvKQqRJFDDiaj33SPfGd3ckNHhHi6ceEoqCbAP4UuMXOPPVOX6H0KVk+9tknkPb48B7jWIw6/AgOeWkBxPRO5w==}
     peerDependencies:
       nx: '>= 15 <= 17'
-
-  '@nx/devkit@19.8.0':
-    resolution: {integrity: sha512-nPaKHF0m2KONlt8GXjN9EhFo+NOvJnFcK6ujKFFLAyZ4TACY4F1FCjSHFTjYI82j+WukzuyjSmY9wzxYughWIQ==}
-    peerDependencies:
-      nx: '>= 17 <= 20'
 
   '@nx/devkit@19.8.2':
     resolution: {integrity: sha512-SoCPy24hkzyrANbZhc3/40uWXnOIISC0jk49BcapC9Zykv9/8lCxiaNtB68b00QKEFISkxOeA703D7GCC4sA0Q==}
@@ -1229,9 +1218,6 @@ packages:
 
   '@nx/workspace@16.10.0':
     resolution: {integrity: sha512-95Eq36bzq2hb095Zvg+Ru8o9oIeOE62tNGGpohBkZPKoK2CUTYEq0AZtdj1suXS82ukCFCyyZ/c/fwxL62HRZA==}
-
-  '@nx/workspace@19.8.0':
-    resolution: {integrity: sha512-8/NHRuJAqurNaFIUuSZdV8qNqiFykXlHjPp6E4raNmB8seIKYJVeYZgw9D7d5piOuLHA3o0JWSKJQ3nBElfCBw==}
 
   '@nx/workspace@19.8.2':
     resolution: {integrity: sha512-oJ8f4ZdwXspoGVzpeHNr5SMdAlEe4h72BE75ztNtNdYIl0GsmjH03g7KeBoDI97DwdKuQLoVZ5nWE/MyABLwOg==}
@@ -4307,12 +4293,6 @@ snapshots:
     transitivePeerDependencies:
       - nx
 
-  '@nrwl/devkit@19.8.0(nx@19.8.0)':
-    dependencies:
-      '@nx/devkit': 19.8.0(nx@19.8.0)
-    transitivePeerDependencies:
-      - nx
-
   '@nrwl/devkit@19.8.2(nx@19.8.0)':
     dependencies:
       '@nx/devkit': 19.8.2(nx@19.8.0)
@@ -4414,14 +4394,6 @@ snapshots:
       - '@swc/core'
       - debug
 
-  '@nrwl/workspace@19.8.0':
-    dependencies:
-      '@nx/workspace': 19.8.0
-    transitivePeerDependencies:
-      - '@swc-node/register'
-      - '@swc/core'
-      - debug
-
   '@nrwl/workspace@19.8.2':
     dependencies:
       '@nx/workspace': 19.8.2
@@ -4451,19 +4423,6 @@ snapshots:
       semver: 7.5.3
       tmp: 0.2.1
       tslib: 2.7.0
-
-  '@nx/devkit@19.8.0(nx@19.8.0)':
-    dependencies:
-      '@nrwl/devkit': 19.8.0(nx@19.8.0)
-      ejs: 3.1.10
-      enquirer: 2.3.6
-      ignore: 5.2.4
-      minimatch: 9.0.3
-      nx: 19.8.0
-      semver: 7.6.3
-      tmp: 0.2.1
-      tslib: 2.7.0
-      yargs-parser: 21.1.1
 
   '@nx/devkit@19.8.2(nx@19.8.0)':
     dependencies:
@@ -4871,20 +4830,6 @@ snapshots:
       ignore: 5.2.4
       nx: 16.10.0
       rxjs: 7.8.1
-      tslib: 2.7.0
-      yargs-parser: 21.1.1
-    transitivePeerDependencies:
-      - '@swc-node/register'
-      - '@swc/core'
-      - debug
-
-  '@nx/workspace@19.8.0':
-    dependencies:
-      '@nrwl/workspace': 19.8.0
-      '@nx/devkit': 19.8.0(nx@19.8.0)
-      chalk: 4.1.2
-      enquirer: 2.3.6
-      nx: 19.8.0
       tslib: 2.7.0
       yargs-parser: 21.1.1
     transitivePeerDependencies:
