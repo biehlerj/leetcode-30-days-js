@@ -22,8 +22,8 @@ importers:
         specifier: 20.0.0
         version: 20.0.0(@babel/traverse@7.23.9)(@types/node@22.8.1)(nx@20.0.6)(ts-node@10.9.2(@types/node@22.8.1)(typescript@5.6.3))(typescript@5.6.3)
       '@nx/js':
-        specifier: 20.0.3
-        version: 20.0.3(@babel/traverse@7.23.9)(@types/node@22.8.1)(nx@20.0.6)(typescript@5.6.3)
+        specifier: 20.0.6
+        version: 20.0.6(@babel/traverse@7.23.9)(@types/node@22.8.1)(nx@20.0.6)(typescript@5.6.3)
       '@nx/linter':
         specifier: 19.8.4
         version: 19.8.4(@babel/traverse@7.23.9)(@types/node@22.8.1)(@zkochan/js-yaml@0.0.7)(eslint@8.57.1)(nx@20.0.6)
@@ -929,6 +929,11 @@ packages:
     peerDependencies:
       nx: '>= 19 <= 21'
 
+  '@nx/devkit@20.0.6':
+    resolution: {integrity: sha512-vUjVVEJgfq/roCzDDZDXduwnhVXl1MM5No2UELUka2oNBK09pPigdFxzUNh8XvmOyFskCGDTLKH/dAO5yTD5Bg==}
+    peerDependencies:
+      nx: '>= 19 <= 21'
+
   '@nx/eslint-plugin@16.10.0':
     resolution: {integrity: sha512-fdOlCrSJK6HfCs+FVXUxzS5gobnGymTU85B3vXPYkVpJwKmq9voX7HBhx9euScRGgXdO9335DIixc/QV6zGpKA==}
     peerDependencies:
@@ -974,8 +979,8 @@ packages:
       verdaccio:
         optional: true
 
-  '@nx/js@20.0.3':
-    resolution: {integrity: sha512-UbltxJyfEXL586kk7yxOTNHtigd7rq7atmcOmMphcxbeWk9HzeowVh6j6OA4MAKwYauomjCqsJbvWURI8qf+pg==}
+  '@nx/js@20.0.6':
+    resolution: {integrity: sha512-/bAMtcgKX1Te3yCzbbv+QQLnFwb6SxE0iCc6EzxiLepmGhnd0iOArUqepB1mVipfeaO37n00suFjFv1xsaqLHg==}
     peerDependencies:
       verdaccio: ^5.0.4
     peerDependenciesMeta:
@@ -1296,6 +1301,9 @@ packages:
 
   '@nx/workspace@20.0.3':
     resolution: {integrity: sha512-ctStDr9UlXt63v9wC1qS9lqLABSDfcfCH/FtQ6ZF5RjWIkzZS672g29gkT83L9B87dfRJYCH8yGGbvMJzq0qRA==}
+
+  '@nx/workspace@20.0.6':
+    resolution: {integrity: sha512-A7lle47I4JggbhXoUVvkuvULqF0Xejy4LpE0txz9OIM5a9HxW1aIHYYQFuROBuVlMFxAJusPeYFJCCvb+qBxKw==}
 
   '@parcel/watcher@2.0.4':
     resolution: {integrity: sha512-cTDi+FUDBIUOBKEtj+nhiJ71AZVlkAsQFuGQTun5tV9mwQBQgZvhCzG+URPQc8myeN32yRVZEfVAPCs1RW+Jvg==}
@@ -4371,12 +4379,6 @@ snapshots:
     transitivePeerDependencies:
       - nx
 
-  '@nrwl/devkit@16.10.0(nx@20.0.6)':
-    dependencies:
-      '@nx/devkit': 16.10.0(nx@20.0.6)
-    transitivePeerDependencies:
-      - nx
-
   '@nrwl/devkit@19.8.4(nx@19.8.4)':
     dependencies:
       '@nx/devkit': 19.8.4(nx@19.8.4)
@@ -4490,7 +4492,7 @@ snapshots:
 
   '@nx/devkit@16.10.0(nx@20.0.6)':
     dependencies:
-      '@nrwl/devkit': 16.10.0(nx@20.0.6)
+      '@nrwl/devkit': 16.10.0(nx@16.10.0)
       ejs: 3.1.10
       enquirer: 2.3.6
       ignore: 5.2.4
@@ -4561,7 +4563,7 @@ snapshots:
       tslib: 2.7.0
       yargs-parser: 21.1.1
 
-  '@nx/devkit@20.0.3(nx@20.0.6)':
+  '@nx/devkit@20.0.6(nx@20.0.6)':
     dependencies:
       ejs: 3.1.10
       enquirer: 2.3.6
@@ -4784,7 +4786,7 @@ snapshots:
       - supports-color
       - typescript
 
-  '@nx/js@20.0.3(@babel/traverse@7.23.9)(@types/node@22.8.1)(nx@20.0.6)(typescript@5.6.3)':
+  '@nx/js@20.0.6(@babel/traverse@7.23.9)(@types/node@22.8.1)(nx@20.0.6)(typescript@5.6.3)':
     dependencies:
       '@babel/core': 7.23.9
       '@babel/plugin-proposal-decorators': 7.22.7(@babel/core@7.23.9)
@@ -4793,8 +4795,8 @@ snapshots:
       '@babel/preset-env': 7.23.9(@babel/core@7.23.9)
       '@babel/preset-typescript': 7.22.5(@babel/core@7.23.9)
       '@babel/runtime': 7.22.6
-      '@nx/devkit': 20.0.3(nx@20.0.6)
-      '@nx/workspace': 20.0.3
+      '@nx/devkit': 20.0.6(nx@20.0.6)
+      '@nx/workspace': 20.0.6
       '@zkochan/js-yaml': 0.0.7
       babel-plugin-const-enum: 1.2.0(@babel/core@7.23.9)
       babel-plugin-macros: 2.8.0
@@ -5042,6 +5044,19 @@ snapshots:
       chalk: 4.1.2
       enquirer: 2.3.6
       nx: 20.0.3
+      tslib: 2.7.0
+      yargs-parser: 21.1.1
+    transitivePeerDependencies:
+      - '@swc-node/register'
+      - '@swc/core'
+      - debug
+
+  '@nx/workspace@20.0.6':
+    dependencies:
+      '@nx/devkit': 20.0.6(nx@20.0.6)
+      chalk: 4.1.2
+      enquirer: 2.3.6
+      nx: 20.0.6
       tslib: 2.7.0
       yargs-parser: 21.1.1
     transitivePeerDependencies:
