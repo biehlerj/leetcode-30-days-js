@@ -28,8 +28,8 @@ importers:
         specifier: 19.8.4
         version: 19.8.4(@babel/traverse@7.23.9)(@types/node@22.10.1)(@zkochan/js-yaml@0.0.7)(eslint@8.57.1)(nx@20.2.0)
       '@nx/workspace':
-        specifier: 20.1.2
-        version: 20.1.2
+        specifier: 20.2.0
+        version: 20.2.0
       '@types/jest':
         specifier: ^29.5.14
         version: 29.5.14
@@ -4297,12 +4297,6 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.15.0
 
-  '@nrwl/devkit@16.10.0(nx@16.10.0)':
-    dependencies:
-      '@nx/devkit': 16.10.0(nx@16.10.0)
-    transitivePeerDependencies:
-      - nx
-
   '@nrwl/devkit@16.10.0(nx@20.2.0)':
     dependencies:
       '@nx/devkit': 16.10.0(nx@20.2.0)
@@ -4411,7 +4405,7 @@ snapshots:
 
   '@nx/devkit@16.10.0(nx@16.10.0)':
     dependencies:
-      '@nrwl/devkit': 16.10.0(nx@16.10.0)
+      '@nrwl/devkit': 16.10.0(nx@20.2.0)
       ejs: 3.1.10
       enquirer: 2.3.6
       ignore: 5.2.4
