@@ -19,8 +19,8 @@ importers:
         specifier: 16.10.0
         version: 16.10.0(@babel/traverse@7.23.9)(@types/node@22.10.2)(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@5.7.2))(eslint-config-prettier@8.10.0(eslint@8.57.1))(eslint@8.57.1)(nx@20.2.2)(typescript@5.7.2)
       '@nx/jest':
-        specifier: 20.2.2
-        version: 20.2.2(@babel/traverse@7.23.9)(@types/node@22.10.2)(nx@20.2.2)(ts-node@10.9.2(@types/node@22.10.2)(typescript@5.7.2))(typescript@5.7.2)
+        specifier: 20.3.0
+        version: 20.3.0(@babel/traverse@7.23.9)(@types/node@22.10.2)(nx@20.2.2)(ts-node@10.9.2(@types/node@22.10.2)(typescript@5.7.2))(typescript@5.7.2)
       '@nx/js':
         specifier: 20.3.0
         version: 20.3.0(@babel/traverse@7.23.9)(@types/node@22.10.2)(nx@20.2.2)(typescript@5.7.2)
@@ -947,8 +947,8 @@ packages:
       '@zkochan/js-yaml':
         optional: true
 
-  '@nx/jest@20.2.2':
-    resolution: {integrity: sha512-czZprpiVAZQKixpib1Vphi3Aoh5qBr7KATgP7+P0ogDTrxd7sivCFDM8wZeilhdTfx85wsR0viOtLVm6D3RTLA==}
+  '@nx/jest@20.3.0':
+    resolution: {integrity: sha512-szkmlq8Zgx1J04yq34HfbC1jGrELVXcJTfo76SnFonL9crnbBsLS2mPrvCe431Zm9Xs1PYNvxZLeIbxf6bVXcQ==}
 
   '@nx/js@16.10.0':
     resolution: {integrity: sha512-27AH0/+XTMzOxVS6oV8Zl7/Rr1UDMYsnCVqoCU9CXp087uxcD4VnBOEjsEUlJKh1RdwGE3K0hBkk7NC1LP+vYQ==}
@@ -960,14 +960,6 @@ packages:
 
   '@nx/js@19.8.4':
     resolution: {integrity: sha512-rBiBi0A9NsxA5cnMcDRXllNXFJYjk+YiNP4T5e+GmqHmicjRjF+mORrhQ4zBZXvZwS2O+ZO9iBOZX41IVqzFaw==}
-    peerDependencies:
-      verdaccio: ^5.0.4
-    peerDependenciesMeta:
-      verdaccio:
-        optional: true
-
-  '@nx/js@20.2.2':
-    resolution: {integrity: sha512-y/L+GMS8pIE1rQTQ28Lb1YeWpEnDj2v3T/7QpWvICc78NZXuMrO6N1ZRTPRSQNXKL6Bs9S9bRuivsvSIiNlULw==}
     peerDependencies:
       verdaccio: ^5.0.4
     peerDependenciesMeta:
@@ -2823,14 +2815,6 @@ packages:
     resolution: {integrity: sha512-qYg9KP24dD5qka9J47d0aVky0N+b4fTU89LN9iDnjB5waksiC49rvMB0PrUJQGoTmH50XPiqOvAjDfaijGxYZw==}
     engines: {node: '>=8'}
 
-  resolve.exports@1.1.0:
-    resolution: {integrity: sha512-J1l+Zxxp4XK3LUDZ9m60LRJF/mAe4z6a4xyabPHk7pvK5t35dACV32iIjJDFeWZFfZlO29w6SZ67knR0tHzJtQ==}
-    engines: {node: '>=10'}
-
-  resolve.exports@2.0.2:
-    resolution: {integrity: sha512-X2UW6Nw3n/aMgDVy+0rSqgHlv39WZAlZrXCdnbyEiKm17DSqHX4MmQMaST3FbeWR5FTuRcUwYAziZajji0Y7mg==}
-    engines: {node: '>=10'}
-
   resolve.exports@2.0.3:
     resolution: {integrity: sha512-OcXjMsGdhL4XnbShKpAcSqPMzQoYkYyhbEaeSko47MjRP9NfEQMhZkXL1DoFlt9LWQn4YttrdnV6X2OiyzBi+A==}
     engines: {node: '>=10'}
@@ -4568,12 +4552,12 @@ snapshots:
       - supports-color
       - verdaccio
 
-  '@nx/jest@20.2.2(@babel/traverse@7.23.9)(@types/node@22.10.2)(nx@20.2.2)(ts-node@10.9.2(@types/node@22.10.2)(typescript@5.7.2))(typescript@5.7.2)':
+  '@nx/jest@20.3.0(@babel/traverse@7.23.9)(@types/node@22.10.2)(nx@20.2.2)(ts-node@10.9.2(@types/node@22.10.2)(typescript@5.7.2))(typescript@5.7.2)':
     dependencies:
       '@jest/reporters': 29.7.0
       '@jest/test-result': 29.7.0
-      '@nx/devkit': 20.2.2(nx@20.2.2)
-      '@nx/js': 20.2.2(@babel/traverse@7.23.9)(@types/node@22.10.2)(nx@20.2.2)(typescript@5.7.2)
+      '@nx/devkit': 20.3.0(nx@20.2.2)
+      '@nx/js': 20.3.0(@babel/traverse@7.23.9)(@types/node@22.10.2)(nx@20.2.2)(typescript@5.7.2)
       '@phenomnomnominal/tsquery': 5.0.1(typescript@5.7.2)
       chalk: 4.1.2
       identity-obj-proxy: 3.0.0
@@ -4581,7 +4565,7 @@ snapshots:
       jest-resolve: 29.7.0
       jest-util: 29.7.0
       minimatch: 9.0.3
-      resolve.exports: 1.1.0
+      resolve.exports: 2.0.3
       semver: 7.6.3
       tslib: 2.8.1
       yargs-parser: 21.1.1
@@ -4673,49 +4657,6 @@ snapshots:
       semver: 7.6.3
       source-map-support: 0.5.19
       ts-node: 10.9.1(@types/node@22.10.2)(typescript@5.4.5)
-      tsconfig-paths: 4.2.0
-      tslib: 2.8.1
-    transitivePeerDependencies:
-      - '@babel/traverse'
-      - '@swc-node/register'
-      - '@swc/core'
-      - '@swc/wasm'
-      - '@types/node'
-      - debug
-      - nx
-      - supports-color
-      - typescript
-
-  '@nx/js@20.2.2(@babel/traverse@7.23.9)(@types/node@22.10.2)(nx@20.2.2)(typescript@5.7.2)':
-    dependencies:
-      '@babel/core': 7.23.9
-      '@babel/plugin-proposal-decorators': 7.22.7(@babel/core@7.23.9)
-      '@babel/plugin-transform-class-properties': 7.23.3(@babel/core@7.23.9)
-      '@babel/plugin-transform-runtime': 7.23.9(@babel/core@7.23.9)
-      '@babel/preset-env': 7.23.9(@babel/core@7.23.9)
-      '@babel/preset-typescript': 7.22.5(@babel/core@7.23.9)
-      '@babel/runtime': 7.22.6
-      '@nx/devkit': 20.2.2(nx@20.2.2)
-      '@nx/workspace': 20.2.2
-      '@zkochan/js-yaml': 0.0.7
-      babel-plugin-const-enum: 1.2.0(@babel/core@7.23.9)
-      babel-plugin-macros: 2.8.0
-      babel-plugin-transform-typescript-metadata: 0.3.2(@babel/core@7.23.9)(@babel/traverse@7.23.9)
-      chalk: 4.1.2
-      columnify: 1.6.0
-      detect-port: 1.5.1
-      enquirer: 2.3.6
-      ignore: 5.2.4
-      js-tokens: 4.0.0
-      jsonc-parser: 3.2.0
-      minimatch: 9.0.3
-      npm-package-arg: 11.0.1
-      npm-run-path: 4.0.1
-      ora: 5.3.0
-      semver: 7.6.3
-      source-map-support: 0.5.19
-      tinyglobby: 0.2.10
-      ts-node: 10.9.1(@types/node@22.10.2)(typescript@5.7.2)
       tsconfig-paths: 4.2.0
       tslib: 2.8.1
     transitivePeerDependencies:
@@ -6220,7 +6161,7 @@ snapshots:
       jest-util: 29.7.0
       jest-validate: 29.7.0
       resolve: 1.22.2
-      resolve.exports: 2.0.2
+      resolve.exports: 2.0.3
       slash: 3.0.0
 
   jest-runner@29.7.0:
@@ -6945,10 +6886,6 @@ snapshots:
   resolve-from@4.0.0: {}
 
   resolve-from@5.0.0: {}
-
-  resolve.exports@1.1.0: {}
-
-  resolve.exports@2.0.2: {}
 
   resolve.exports@2.0.3: {}
 
