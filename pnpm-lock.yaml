@@ -28,8 +28,8 @@ importers:
         specifier: 19.8.4
         version: 19.8.4(@babel/traverse@7.23.9)(@types/node@22.10.2)(@zkochan/js-yaml@0.0.7)(eslint@8.57.1)(nx@20.2.2)
       '@nx/workspace':
-        specifier: 20.2.2
-        version: 20.2.2
+        specifier: 20.3.0
+        version: 20.3.0
       '@types/jest':
         specifier: ^29.5.14
         version: 29.5.14
@@ -919,11 +919,6 @@ packages:
     peerDependencies:
       nx: '>= 17 <= 20'
 
-  '@nx/devkit@20.2.2':
-    resolution: {integrity: sha512-uqs0LVvuRRVAfFdn0ewvmr1vsNV9Ztugw36emcLJxskqhBZb10K+vzdTDAZpg5aVE2ISg1BmPidoOyk1tP+Omg==}
-    peerDependencies:
-      nx: '>= 19 <= 21'
-
   '@nx/devkit@20.3.0':
     resolution: {integrity: sha512-u9oRd2F33DLNWPbzpYGW7xuMEYUAOwO9DLP9nGYpxbZXy6Z4AdoKeqhN+KBTyg8+DyQGuKUSEXcWriDyLLgcHw==}
     peerDependencies:
@@ -1222,9 +1217,6 @@ packages:
 
   '@nx/workspace@19.8.4':
     resolution: {integrity: sha512-ub4nD2klOj00onF1KrNXIlLB9hXN9ybHs7XSP9YW+52qz79KaJWJm46ebTqeLnDZApYbAcB0vSCp2+kaEV24Ew==}
-
-  '@nx/workspace@20.2.2':
-    resolution: {integrity: sha512-VC22d5EG9f8sLD+gvq9Nbau0u8cV0gy5aYyRcleecqs9bBvOiVxAvv7HaDCRcHezHQhKwxcIOZvmuCjYF/oKxg==}
 
   '@nx/workspace@20.3.0':
     resolution: {integrity: sha512-z8NSAo5SiLEMPuwasDvLdCCtaTGdINh1cSZMCom8HeLbT8F7risbR0IlHVqVrKj9FPKqrAIsH+4knVb4dHHCnQ==}
@@ -4466,18 +4458,6 @@ snapshots:
       tslib: 2.8.1
       yargs-parser: 21.1.1
 
-  '@nx/devkit@20.2.2(nx@20.2.2)':
-    dependencies:
-      ejs: 3.1.10
-      enquirer: 2.3.6
-      ignore: 5.2.4
-      minimatch: 9.0.3
-      nx: 20.2.2
-      semver: 7.6.3
-      tmp: 0.2.1
-      tslib: 2.8.1
-      yargs-parser: 21.1.1
-
   '@nx/devkit@20.3.0(nx@20.2.2)':
     dependencies:
       ejs: 3.1.10
@@ -4872,19 +4852,6 @@ snapshots:
       chalk: 4.1.2
       enquirer: 2.3.6
       nx: 19.8.4
-      tslib: 2.8.1
-      yargs-parser: 21.1.1
-    transitivePeerDependencies:
-      - '@swc-node/register'
-      - '@swc/core'
-      - debug
-
-  '@nx/workspace@20.2.2':
-    dependencies:
-      '@nx/devkit': 20.2.2(nx@20.2.2)
-      chalk: 4.1.2
-      enquirer: 2.3.6
-      nx: 20.2.2
       tslib: 2.8.1
       yargs-parser: 21.1.1
     transitivePeerDependencies:
