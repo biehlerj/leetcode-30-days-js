@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@datastructures-js/priority-queue':
-        specifier: ^6.3.1
-        version: 6.3.1
+        specifier: ^6.3.2
+        version: 6.3.2
       tslib:
         specifier: ^2.8.1
         version: 2.8.1
@@ -717,8 +717,8 @@ packages:
   '@datastructures-js/heap@4.3.3':
     resolution: {integrity: sha512-UcUu/DLh/aM4W3C8zZfwxxm6/6FIZUlm3mcAXuNOCa6Aj4iizNvNXQyb8DjZQH2jKSQbMRyNlngP6TPimuGjpQ==}
 
-  '@datastructures-js/priority-queue@6.3.1':
-    resolution: {integrity: sha512-eoxkWql/j0VJ0UFMFTpnyJz4KbEEVQ6aZ/JuJUgenu0Im4tYKylAycNGsYCHGXiVNEd7OKGVwfx1Ac3oYkuu7A==}
+  '@datastructures-js/priority-queue@6.3.2':
+    resolution: {integrity: sha512-hPmWlbmYRegOkZsWJuOzZw+BYcrOJ9B5xwy8Sz/QtEtLUPHtJbX9OpPpCB+KQPgOVb1QonqFqiddVDud/i5afw==}
 
   '@emnapi/core@1.2.0':
     resolution: {integrity: sha512-E7Vgw78I93we4ZWdYCb4DGAwRROGkMIXk7/y87UmANR+J6qsWusmC3gLt0H+O0KOt5e6O38U8oJamgbudrES/w==}
@@ -3958,7 +3958,7 @@ snapshots:
 
   '@datastructures-js/heap@4.3.3': {}
 
-  '@datastructures-js/priority-queue@6.3.1':
+  '@datastructures-js/priority-queue@6.3.2':
     dependencies:
       '@datastructures-js/heap': 4.3.3
 
