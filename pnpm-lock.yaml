@@ -28,8 +28,8 @@ importers:
         specifier: 19.8.4
         version: 19.8.4(@babel/traverse@7.26.9)(@types/node@22.10.5)(@zkochan/js-yaml@0.0.7)(eslint@8.57.1)(nx@20.4.2)
       '@nx/workspace':
-        specifier: 20.3.1
-        version: 20.3.1
+        specifier: 20.4.4
+        version: 20.4.4
       '@types/jest':
         specifier: ^29.5.14
         version: 29.5.14
@@ -8466,7 +8466,7 @@ snapshots:
       figures: 3.2.0
       flat: 5.0.2
       front-matter: 4.0.2
-      ignore: 5.3.2
+      ignore: 5.2.4
       jest-diff: 29.7.0
       jsonc-parser: 3.2.0
       lines-and-columns: 2.0.3
@@ -8476,7 +8476,7 @@ snapshots:
       open: 8.4.2
       ora: 5.3.0
       resolve.exports: 2.0.3
-      semver: 7.7.1
+      semver: 7.6.3
       string-width: 4.2.3
       tar-stream: 2.2.0
       tmp: 0.2.3
