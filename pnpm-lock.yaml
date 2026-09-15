@@ -28,8 +28,8 @@ importers:
         specifier: 19.8.4
         version: 19.8.4(@babel/traverse@7.29.8(supports-color@7.2.0))(@types/node@26.5.1)(@zkochan/js-yaml@0.0.7)(debug@4.4.3(supports-color@7.2.0))(eslint@8.57.1(supports-color@7.2.0))(nx@23.2.1)(supports-color@7.2.0)
       '@nx/workspace':
-        specifier: 20.4.4
-        version: 20.4.4(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)
+        specifier: 23.2.1
+        version: 23.2.1
       '@types/jest':
         specifier: ^29.5.14
         version: 29.5.14
