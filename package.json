@@ -24,7 +24,7 @@
     "eslint-config-prettier": "8.10.2",
     "jest": "^30.5.2",
     "jest-environment-jsdom": "^30.5.2",
-    "nx": "23.2.1",
+    "nx": "23.3.0",
     "nx-cloud": "latest",
     "prettier": "^3.9.9",
     "ts-jest": "^29.4.14",
