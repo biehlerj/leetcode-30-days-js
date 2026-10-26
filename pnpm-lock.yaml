@@ -28,8 +28,8 @@ importers:
         specifier: 19.8.4
         version: 19.8.4
       '@nx/workspace':
-        specifier: 23.3.0
-        version: 23.3.0
+        specifier: 24.0.0
+        version: 24.0.0
       '@types/jest':
         specifier: ^30.0.0
         version: 30.0.0
@@ -72,6 +72,66 @@ importers:
       typescript:
         specifier: ~5.9.3
         version: 5.9.3
+
+  packages/are-deeply-equal: {}
+
+  packages/array-wrapper: {}
+
+  packages/call-polyfill: {}
+
+  packages/check-if-instance-of: {}
+
+  packages/chunk: {}
+
+  packages/compose: {}
+
+  packages/create-counter: {}
+
+  packages/create-counter2: {}
+
+  packages/create-hello-world: {}
+
+  packages/curry: {}
+
+  packages/debounce: {}
+
+  packages/event-emitter: {}
+
+  packages/fib-generator: {}
+
+  packages/filter: {}
+
+  packages/flat: {}
+
+  packages/group-by: {}
+
+  packages/inorder-traversal: {}
+
+  packages/json-stringify: {}
+
+  packages/json-to-matrix: {}
+
+  packages/last: {}
+
+  packages/map: {}
+
+  packages/memoize: {}
+
+  packages/obj-diff: {}
+
+  packages/once: {}
+
+  packages/promise-pool: {}
+
+  packages/reduce: {}
+
+  packages/sleep: {}
+
+  packages/throttle: {}
+
+  packages/time-limit: {}
+
+  packages/time-limited-cache: {}
 
 packages:
 
