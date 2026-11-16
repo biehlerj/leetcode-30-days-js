@@ -22,8 +22,8 @@ importers:
         specifier: 24.0.5
         version: 24.0.5(@babel/traverse@7.29.8(supports-color@7.2.0))(@types/node@26.6.6)(babel-plugin-macros@3.1.0)(jest@30.5.2(@types/node@26.6.6)(babel-plugin-macros@3.1.0)(supports-color@7.2.0)(ts-node@10.9.2(@types/node@26.6.6)(typescript@5.9.3)))(nx@24.0.6)(supports-color@7.2.0)(ts-jest@29.4.15(@babel/core@7.29.7(supports-color@7.2.0))(@jest/transform@30.5.2(supports-color@7.2.0))(@jest/types@30.5.1)(babel-jest@30.5.2(@babel/core@7.29.7(supports-color@7.2.0))(supports-color@7.2.0))(jest-util@30.5.1)(jest@30.5.2(@types/node@26.6.6)(babel-plugin-macros@3.1.0)(supports-color@7.2.0)(ts-node@10.9.2(@types/node@26.6.6)(typescript@5.9.3)))(typescript@5.9.3))(ts-node@10.9.2(@types/node@26.6.6)(typescript@5.9.3))(typescript@5.9.3)
       '@nx/js':
-        specifier: 24.0.5
-        version: 24.0.5(@babel/traverse@7.29.8(supports-color@7.2.0))(nx@24.0.6)(supports-color@7.2.0)
+        specifier: 24.0.6
+        version: 24.0.6(@babel/traverse@7.29.8(supports-color@7.2.0))(nx@24.0.6)(supports-color@7.2.0)
       '@nx/linter':
         specifier: 19.8.4
         version: 19.8.4
@@ -1078,6 +1078,11 @@ packages:
     peerDependencies:
       nx: '>= 23 <= 25 || ^24.0.0-0'
 
+  '@nx/devkit@24.0.6':
+    resolution: {integrity: sha512-b/VfBRKLcjQm3w8m+tsQCpUIq8ChTiAghMFk2zgNDwXHFkQNblAA96Hm7a7+kbX2diPsQ7a1HpMXPp0iNbL6AA==}
+    peerDependencies:
+      nx: '>= 23 <= 25 || ^24.0.0-0'
+
   '@nx/eslint-plugin@16.10.0':
     resolution: {integrity: sha512-fdOlCrSJK6HfCs+FVXUxzS5gobnGymTU85B3vXPYkVpJwKmq9voX7HBhx9euScRGgXdO9335DIixc/QV6zGpKA==}
     peerDependencies:
@@ -1125,6 +1130,17 @@ packages:
 
   '@nx/js@24.0.5':
     resolution: {integrity: sha512-QoM31DBUmvXBWujHDPLN77e2/31D4GkQTdCziy5cNev+ZoPwLTUDEdxUlccKMJtSH79i0VP8E65wPoXI2D1nsg==}
+    peerDependencies:
+      '@swc/cli': '>=0.6.0 <0.9.0'
+      verdaccio: ^6.0.5
+    peerDependenciesMeta:
+      '@swc/cli':
+        optional: true
+      verdaccio:
+        optional: true
+
+  '@nx/js@24.0.6':
+    resolution: {integrity: sha512-UWLJSRSDflz0V0AyjMu6SkQrdDLIaB1H3sL8/YDt0OL7N3UrMiBfBfVoYuVAJ4mWDBYyrb/LK5gPxkM0ihex1A==}
     peerDependencies:
       '@swc/cli': '>=0.6.0 <0.9.0'
       verdaccio: ^6.0.5
@@ -1438,6 +1454,9 @@ packages:
 
   '@nx/workspace@24.0.5':
     resolution: {integrity: sha512-NFJZsfe/5F9OOJLQdeSXTZ+IrIWHwDRqWkBAnQgW3iEPa41G+40PPaZs0HAGlisDxNQ91IpUilhHxNJnfDKjAQ==}
+
+  '@nx/workspace@24.0.6':
+    resolution: {integrity: sha512-kOANsH9ks4A+s4iD7IgHpYhdk2tX5PPUxrQg5fuSWOdc/t9LmQjp/2e9HnKbzszp1i+vjl/1E/sPcLRU5U/Ztg==}
 
   '@parcel/watcher-android-arm64@2.6.0':
     resolution: {integrity: sha512-trgpLSCKRC/huFjXX/Smh+0sWe4+YtKfktIToiMl59ghz7z+qkH6kMvNnUbLyRs9N11t8l4svSCs1+5B3rOAhA==}
@@ -5976,6 +5995,15 @@ snapshots:
       tslib: 2.9.1
       yargs-parser: 21.1.1
 
+  '@nx/devkit@24.0.6(nx@24.0.6)':
+    dependencies:
+      ejs: 5.0.1
+      minimatch: 10.2.5
+      nx: 24.0.6
+      semver: 7.8.5
+      tslib: 2.9.1
+      yargs-parser: 21.1.1
+
   '@nx/eslint-plugin@16.10.0(@babel/traverse@7.29.8(supports-color@7.2.0))(@types/node@26.6.6)(@typescript-eslint/parser@5.62.0(eslint@8.57.1(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3))(debug@4.4.3(supports-color@7.2.0))(eslint-config-prettier@8.10.2(eslint@8.57.1(supports-color@7.2.0)))(eslint@8.57.1(supports-color@7.2.0))(nx@24.0.6)(supports-color@7.2.0)(typescript@5.9.3)':
     dependencies:
       '@nrwl/eslint-plugin-nx': 16.10.0(@babel/traverse@7.29.8(supports-color@7.2.0))(@types/node@26.6.6)(@typescript-eslint/parser@5.62.0(eslint@8.57.1(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3))(debug@4.4.3(supports-color@7.2.0))(eslint-config-prettier@8.10.2(eslint@8.57.1(supports-color@7.2.0)))(eslint@8.57.1(supports-color@7.2.0))(nx@24.0.6)(supports-color@7.2.0)(typescript@5.9.3)
@@ -6223,6 +6251,44 @@ snapshots:
       - nx
       - supports-color
 
+  '@nx/js@24.0.6(@babel/traverse@7.29.8(supports-color@7.2.0))(nx@24.0.6)(supports-color@7.2.0)':
+    dependencies:
+      '@babel/core': 7.29.7(supports-color@7.2.0)
+      '@babel/plugin-proposal-decorators': 7.29.7(@babel/core@7.29.7(supports-color@7.2.0))(supports-color@7.2.0)
+      '@babel/plugin-transform-class-properties': 7.29.7(@babel/core@7.29.7(supports-color@7.2.0))(supports-color@7.2.0)
+      '@babel/plugin-transform-class-static-block': 7.29.7(@babel/core@7.29.7(supports-color@7.2.0))(supports-color@7.2.0)
+      '@babel/plugin-transform-private-methods': 7.29.7(@babel/core@7.29.7(supports-color@7.2.0))(supports-color@7.2.0)
+      '@babel/plugin-transform-private-property-in-object': 7.29.7(@babel/core@7.29.7(supports-color@7.2.0))(supports-color@7.2.0)
+      '@babel/plugin-transform-runtime': 7.29.7(@babel/core@7.29.7(supports-color@7.2.0))(supports-color@7.2.0)
+      '@babel/preset-env': 7.29.7(@babel/core@7.29.7(supports-color@7.2.0))(supports-color@7.2.0)
+      '@babel/preset-typescript': 7.29.7(@babel/core@7.29.7(supports-color@7.2.0))(supports-color@7.2.0)
+      '@babel/runtime': 7.29.7
+      '@nx/devkit': 24.0.6(nx@24.0.6)
+      '@nx/workspace': 24.0.6
+      '@zkochan/js-yaml': 0.0.7
+      babel-plugin-const-enum: 1.2.0(@babel/core@7.29.7(supports-color@7.2.0))(supports-color@7.2.0)
+      babel-plugin-macros: 3.1.0
+      babel-plugin-transform-typescript-metadata: 0.3.2(@babel/core@7.29.7(supports-color@7.2.0))(@babel/traverse@7.29.8(supports-color@7.2.0))
+      chalk: 4.1.2
+      columnify: 1.6.0
+      detect-port: 2.1.0
+      ignore: 7.0.12
+      js-tokens: 4.0.0
+      jsonc-parser: 3.3.1
+      npm-run-path: 4.0.1
+      picocolors: 1.1.1
+      picomatch: 4.0.7
+      semver: 7.8.5
+      source-map-support: 0.5.21
+      tinyglobby: 0.2.17
+      tslib: 2.9.1
+    transitivePeerDependencies:
+      - '@babel/traverse'
+      - '@swc-node/register'
+      - '@swc/core'
+      - nx
+      - supports-color
+
   '@nx/linter@19.8.4':
     dependencies:
       '@nx/eslint': 19.8.4(@babel/traverse@7.29.8(supports-color@7.2.0))(@types/node@26.6.6)(debug@4.4.3(supports-color@7.2.0))(eslint@8.57.1(supports-color@7.2.0))(nx@24.0.6)(supports-color@7.2.0)
@@ -6429,6 +6495,20 @@ snapshots:
       '@zkochan/js-yaml': 0.0.7
       chalk: 4.1.2
       nx: 24.0.5
+      picomatch: 4.0.7
+      semver: 7.8.5
+      tslib: 2.9.1
+      yargs-parser: 21.1.1
+    transitivePeerDependencies:
+      - '@swc-node/register'
+      - '@swc/core'
+
+  '@nx/workspace@24.0.6':
+    dependencies:
+      '@nx/devkit': 24.0.6(nx@24.0.6)
+      '@zkochan/js-yaml': 0.0.7
+      chalk: 4.1.2
+      nx: 24.0.6
       picomatch: 4.0.7
       semver: 7.8.5
       tslib: 2.9.1
